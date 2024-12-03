@@ -18,7 +18,7 @@ app.use('/api/users', userRoutes);
 app.use('/api/roles', roleRoutes);
 
 // MongoDB Connection
-mongoose.connect(process.env.MONGO_URI, { useNewUrlParser: true, useUnifiedTopology: true })
+mongoose.connect(process.env.MONGO_URI, { useNewUrlParser: true, useUnifiedTopology: true, serverSelectionTimeoutMS: 10000 })
   .then(() => console.log('MongoDB connected'))
   .catch(err => console.log(err));
 
