@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API = axios.create({ baseURL: 'https://vercel.com/sagarika-singhs-projects/vrv/BdFnUdtj8zGNGKYgmm9ngtVWEbay/api' });
+const API = axios.create({ baseURL: 'https://vrv-backend-tau.vercel.app/api' });
 
 export const fetchUsers = () => API.get('/users');
 export const createUser = (data) => API.post('/users', data);
