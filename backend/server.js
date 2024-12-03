@@ -10,7 +10,9 @@ const roleRoutes = require('./routes/roleRoutes');
 const app = express();
 app.use(bodyParser.json());
 app.use(cors());
-
+app.get("/", ( req, res) => {
+  res.json("Hello");
+});
 // Routes
 app.use('/api/users', userRoutes);
 app.use('/api/roles', roleRoutes);
