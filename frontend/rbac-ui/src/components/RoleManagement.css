@@ -1,0 +1,83 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #1e1e1e;
+  color: #e8e8e8;
+}
+
+.role-management h1 {
+  margin-bottom: 20px;
+}
+
+.table-container {
+  margin-top: 20px;
+}
+
+.table-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.search-bar {
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #444;
+  background-color: #292929;
+  color: #e8e8e8;
+}
+
+.btn {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.add-role-btn {
+  background-color: #007bff;
+  color: white;
+}
+
+.edit-btn {
+  background-color: #f39c12;
+  color: white;
+}
+
+.submit-btn {
+  background-color: #27ae60;
+  color: white;
+}
+
+.styled-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.styled-table th,
+.styled-table td {
+  text-align: left;
+  padding: 12px;
+}
+
+.styled-table tr:hover {
+  background-color: #292929;
+}
+
+.role-form {
+  margin-top: 20px;
+}
+
+.role-form h2 {
+  margin-bottom: 10px;
+}
+
+.role-form input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #444;
+  background-color: #292929;
+  color: #e8e8e8;
+}
