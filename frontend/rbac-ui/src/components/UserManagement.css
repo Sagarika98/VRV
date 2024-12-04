@@ -65,6 +65,19 @@ body {
   border-collapse: collapse;
 }
 
+.styled-table tr {
+  border-radius: 5px;
+  margin-bottom: 15px;
+  padding: 10px;
+  background-color: #2c2c2c;
+}
+
+.styled-table td {
+  text-align: left;
+  padding: 8px 0;
+}
+
+
 
 @media (max-width: 768px) {
   .styled-table {
@@ -75,15 +88,20 @@ body {
     display: none; /* Hide table headers */
   }
   .styled-table tr {
-    display: block;
-    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
     border-bottom: 1px solid #444;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #292929;
   }
 
   .styled-table td {
+    padding: 5px 0;
     display: flex;
     justify-content: space-between;
-    padding: 10px 5px;
+    align-items: center;
   }
 
   .styled-table td::before {
@@ -91,15 +109,35 @@ body {
     font-weight: bold;
     text-transform: uppercase;
     color: #aaa;
+    flex-basis: 40%;
+    text-align: left;
   }
 
   .styled-table td:last-child {
     border-bottom: none;
   }
+  .btn {
+    width: 100%;
+    margin: 5px 0;
+    padding: 8px;
+  }
+
+  .btn.edit-btn,
+  .btn.delete-btn {
+    margin-top: 10px;
+  }
 }
 
 .styled-table tr:hover {
   background-color: #292929;
+}
+
+
+.badge {
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 4px;
+  text-align: center;
 }
 
 .badge-admin {
